@@ -367,6 +367,7 @@ modules:
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - cargo --offline build --release --bin minus_games_gui
+      - sed -i 's/Exec=minus_games_gui/Exec=\/app\/bin\/run.sh/' other/assets/gui/io.github.accessory.minus_games_gui.desktop
       - install -Dm755 target/release/minus_games_gui /app/bin/minus_games_gui
       - install -Dm644 other/assets/common/MinusGames.svg /app/share/icons/hicolor/scalable/apps/io.github.accessory.minus_games_gui.svg
       - install -Dm644 other/assets/gui/io.github.accessory.minus_games_gui.desktop /app/share/applications/io.github.accessory.minus_games_gui.desktop

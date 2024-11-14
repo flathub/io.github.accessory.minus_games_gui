@@ -228,7 +228,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Open-Wine-Components/umu-launcher.git
-        tag: 1.1.3
+        tag: 1.1.4
     modules:
       # --- trove_classifiers ---
       - name: trove_classifiers
@@ -376,7 +376,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Accessory/minus_games/
-        commit: 2154106ba189fa53f9b80f1f16efb189e897b74e
+        commit: 7cd14fa49a6b247e7bdca04af7820a4fb4e6602d
       - generated-sources.json
       - type: script
         dest-filename: run.sh

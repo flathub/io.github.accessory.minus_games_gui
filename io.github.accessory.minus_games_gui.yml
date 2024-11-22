@@ -376,7 +376,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Accessory/minus_games/
-        commit: 7cd14fa49a6b247e7bdca04af7820a4fb4e6602d
+        commit: 71bd45970aa14e466245f209792c2ab6ccca4287
       - generated-sources.json
       - type: script
         dest-filename: run.sh

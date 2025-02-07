@@ -90,12 +90,17 @@ finish-args:
   - --filesystem=/mnt
   # should fix steamdeck controler navigation
   - --filesystem=/run/udev:ro
+  - --filesystem=host
   # - --persist=.
   - --share=ipc
   - --socket=wayland
   - --socket=fallback-x11
   - --socket=pulseaudio
   - --share=network
+  # Session Bus
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --talk-name=com.canonical.Unity
+  - --talk-name=org.freedesktop.ScreenSaver
   # --- Steam ---
   # Pressure Vessel
   # See https://github.com/flathub/com.valvesoftware.Steam/commit/0538256facdb0837c33232bc65a9195a8a5bc750

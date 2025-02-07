@@ -90,7 +90,7 @@ finish-args:
   - --filesystem=/mnt
   # should fix steamdeck controler navigation
   - --filesystem=/run/udev:ro
-  - --filesystem=host
+  # - --filesystem=host
   # - --persist=.
   - --share=ipc
   - --socket=wayland

@@ -77,6 +77,7 @@ finish-args:
   - --allow=per-app-dev-shm
   - --env=PATH=/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin
   #   Needed for proton to work
+  - --filesystem=~/.local/share/umu/:rw
   - --filesystem=~/.local/share/Steam:rw
   - --filesystem=~/.var/app/org.openwinecomponents.umu.umu-launcher:rw
   # - --filesystem=home
@@ -382,7 +383,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Accessory/minus_games/
-        commit: a9b3212d336f19e8747ae378bdc61ad03f0b5f6e
+        commit: 7a6985e6a4c5934f7bff082fa3b31d2805e83ffc
       - generated-sources.json
       - type: script
         dest-filename: run.sh

@@ -235,7 +235,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Open-Wine-Components/umu-launcher.git
-        tag: 1.1.4
+        tag: 1.2.5
     modules:
       # --- trove_classifiers ---
       - name: trove_classifiers
@@ -246,8 +246,8 @@ modules:
         cleanup: ['*']
         sources:
           - type: archive
-            url: https://files.pythonhosted.org/packages/78/c9/83f915c3f6f94f4c862c7470284fd714f312cce8e3cf98361312bc02493d/trove_classifiers-2024.7.2.tar.gz
-            sha256: 8328f2ac2ce3fd773cbb37c765a0ed7a83f89dc564c7d452f039b69249d0ac35
+            url: https://files.pythonhosted.org/packages/13/8e/15ba2980e2704edecc53d15506a5bfa6efb3b1cadc5e4df7dc277bc199f8/trove_classifiers-2025.2.18.16.tar.gz
+            sha256: b1ee2e1668589217d4edf506743e28b1834da128f8a122bad522c02d837006e1
 
       # --- pathspec ---
       - name: pathspec
@@ -318,8 +318,8 @@ modules:
         cleanup: ['*']
         sources:
           - type: archive
-            url: https://files.pythonhosted.org/packages/a3/51/8a4a67a8174ce59cf49e816e38e9502900aea9b4af672d0127df8e10d3b0/hatchling-1.25.0.tar.gz
-            sha256: 7064631a512610b52250a4d3ff1bd81551d6d1431c4eb7b72e734df6c74f4262
+            url: https://files.pythonhosted.org/packages/8f/8a/cc1debe3514da292094f1c3a700e4ca25442489731ef7c0814358816bb03/hatchling-1.27.0.tar.gz
+            sha256: 971c296d9819abb3811112fc52c7a9751c8d381898f36533bb16f9791e941fd6
 
       # --- hatch-vcs ---
       - name: hatch-vcs
@@ -342,8 +342,20 @@ modules:
         cleanup: []
         sources:
           - type: archive
-            url: https://files.pythonhosted.org/packages/08/dd/49e06f09b6645156550fb9aee9cc1e59aba7efbc972d665a1bd6ae0435d4/filelock-3.15.4.tar.gz
-            sha256: 2207938cbc1844345cb01a5a95524dae30f0ce089eba5b00378295a17e3e90cb
+            url: https://files.pythonhosted.org/packages/dc/9c/0b15fb47b464e1b663b1acd1253a062aa5feecb07d4e597daea542ebd2b5/filelock-3.17.0.tar.gz
+            sha256: ee4e77401ef576ebb38cd7f13b9b28893194acc20a8e68e18730ba9c0e54660e
+
+      # --- urllib3 ---
+      - name: urllib3
+        buildsystem: simple
+        build-commands:
+          - pip3 install --no-index --no-build-isolation --prefix="${FLATPAK_DEST}"
+            .
+        cleanup: ['*']
+        sources:
+          - type: archive
+            url: https://files.pythonhosted.org/packages/aa/63/e53da845320b757bf29ef6a9062f5c669fe997973f966045cb019c3f4b66/urllib3-2.3.0.tar.gz
+            sha256: f8c5449b3cf0861679ce7e0503c7b44b5ec981bec0d1d3795a07f1ba96f0204d
 
   # GameMode
   - name: gamemode
@@ -383,7 +395,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Accessory/minus_games/
-        commit: d1f4600eed6b308cea74df9f848c252f727f6f39
+        commit: 6e37f22a95c536a26063f6cbdc72f7178856b0e1
       - generated-sources.json
       - type: script
         dest-filename: run.sh

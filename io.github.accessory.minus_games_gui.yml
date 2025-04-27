@@ -400,12 +400,12 @@ modules:
         dest-filename: run.sh
         commands:
           - set -e
-          - export WINEPREFIX=$XDG_DATA_HOME/wine/
+          - export WINEPREFIX=$XDG_DATA_HOME/minus_games_gui/wine/
           - export PROTONPATH=GE-Proton
-          - export WINE_EXE=/app/bin/umu-run
-          - export SERVER_URL="http://localhost:8415"
-          - export CLIENT_GAMES_FOLDER="$XDG_DATA_HOME/minus_games_gui/games"
-          - export CLIENT_FOLDER="$XDG_DATA_HOME/minus_games_gui/client"
-          - export WINE_PREFIX=$XDG_DATA_HOME/minus_games_gui/wine/
+          - export MINUS_GAMES_WINE_EXE=/app/bin/umu-run
+          - export MINUS_GAMES_SERVER_URL="http://localhost:8415"
+          - export MINUS_GAMES_CLIENT_GAMES_FOLDER="$XDG_DATA_HOME/minus_games_gui/games"
+          - export MINUS_GAMES_CLIENT_FOLDER="$XDG_DATA_HOME/minus_games_gui/client"
+          - export MINUS_GAMES_WINE_PREFIX=$XDG_DATA_HOME/minus_games_gui/wine/
           - exec /app/bin/minus_games_gui
           - exit $?

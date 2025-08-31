@@ -8,8 +8,7 @@ sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
 
 x-gl-version: &gl-version '1.4'
-# Change to `25.08-extra` when 25.08 is out
-x-gl-versions: &gl-versions 24.08;24.08extra;1.4
+x-gl-versions: &gl-versions 25.08;25.08-extra;1.4
 x-gl-merge-dirs: &gl-merge-dirs vulkan/icd.d;glvnd/egl_vendor.d;OpenCL/vendors;lib/dri;lib/d3d;vulkan/explicit_layer.d;vulkan/implicit_layer.d
 
 add-extensions:

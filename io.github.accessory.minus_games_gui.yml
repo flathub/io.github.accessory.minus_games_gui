@@ -398,14 +398,14 @@ modules:
       - cargo --offline build --release --bin minus_games_gui
       - sed -i 's/Exec=minus_games_gui/Exec=\/app\/bin\/run.sh/' other/assets/gui/io.github.accessory.minus_games_gui.desktop
       - install -Dm755 target/release/minus_games_gui /app/bin/minus_games_gui
-      - install -Dm644 other/assets/common/MinusGames.svg /app/share/icons/hicolor/scalable/apps/io.github.accessory.minus_games_gui.svg
+      - install -Dm644 other/assets/common/MinusGamesV2.svg /app/share/icons/hicolor/scalable/apps/io.github.accessory.minus_games_gui.svg
       - install -Dm644 other/assets/gui/io.github.accessory.minus_games_gui.desktop /app/share/applications/io.github.accessory.minus_games_gui.desktop
       - install -Dm644 other/assets/gui/io.github.accessory.minus_games_gui.metainfo.xml /app/share/metainfo/io.github.accessory.minus_games_gui.metainfo.xml
       - install -Dm755 run.sh /app/bin/run.sh
     sources:
       - type: git
         url: https://github.com/Accessory/minus_games/
-        commit: 785eda5f10f7f81e679dbd59843ae9a1f5300487
+        commit: 229a91b58e447a0ec6332d7a835b8650a07571f4
       - generated-sources.json
       - type: script
         dest-filename: run.sh

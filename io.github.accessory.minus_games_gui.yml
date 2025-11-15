@@ -94,7 +94,7 @@ finish-args:
   # - --persist=.
   - --share=ipc
   - --socket=wayland
-  - --socket=fallback-x11
+  # - --socket=fallback-x11
   - --socket=pulseaudio
   - --share=network
   # Session Bus
@@ -405,7 +405,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Accessory/minus_games/
-        commit: 6f9b1b633c9b8c1bd9a8051ca7cc8d399a22efbd
+        commit: 4bd4a296b23964947f0bf8c83cff141f1d706ffb
       - generated-sources.json
       - type: script
         dest-filename: run.sh

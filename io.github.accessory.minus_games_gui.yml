@@ -162,7 +162,7 @@ modules:
         cleanup: ['*']
         sources:
           - type: archive
-            url: https://files.pythonhosted.org/packages/00/91/2c7cd1a6b567e8e40c1677c61aba39e5f14ccf06ac78ae4fa6acb84ae140/scikit-build-0.15.0.tar.gz
+            url: https://files.pythonhosted.org/packages/9e/e2/2e440c30e93fc5b505ee56169a4396b05e797a1daadb721aba429adbfd51/scikit-build-0.15.0.tar.gz
             sha256: e723cd0f3489a042370b9ea988bbb9cfd7725e8b25b20ca1c7981821fcf65fb9
         modules:
           - name: python-distro # also needed by Lutris, do not add a cleanup property here!
@@ -399,7 +399,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Accessory/minus_games/
-        commit: b258e3468040d45b81ae7e6d78b5520897c03785
+        commit: 6b1868b3f3326459ac37ced128d74d46b2909673
       - generated-sources.json
       - type: script
         dest-filename: run.sh
